@@ -3285,7 +3285,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #28272b;
 			}
 
 			#header.alt.style3 .logo strong {
@@ -3972,3 +3972,39 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+		/* --- Ajustes de responsividade extra --- */
+
+/* Garantir que imagens nunca estourem a tela */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustar os tiles para 1 por linha em telas pequenas */
+@media screen and (max-width: 768px) {
+  #one.tiles article {
+    width: 100% !important;
+    margin-bottom: 1.5em;
+  }
+}
+
+/* Ajustar espaçamento do banner no mobile */
+@media screen and (max-width: 480px) {
+  #banner .inner {
+    padding: 2em 1em;
+    text-align: center;
+  }
+  #banner h1 {
+    font-size: 1.8em;
+  }
+  #banner p {
+    font-size: 1em;
+  }
+}
+
+/* Melhorar comportamento do menu no celular */
+#menu {
+  width: 100% !important;
+  max-width: none !important;
+}
